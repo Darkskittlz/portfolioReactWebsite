@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'shakespeare';
+    src: local('Lato'), url(./fonts/shakespeare.ttf) format('opentype');
+}
+
+@font-face {
+    font-family: 'notMyType';
+    src: local('Lato'), url(./fonts/notMyType.otf) format('woff');
+}
+
+
+.app{
+    height: 100vh;
+
+    .sections{
+        width: 100%;
+        height: calc(100vh - 70px);
+        background-color: green;
+        position: relative;
+        top: 70px;
+        scroll-behavior: smooth;
+        scroll-snap-type: y mandatory;
+        scrollbar-width: none; //for firefox
+        &::-webkit-scrollbar{
+            display: none;
+        };
+        // &::-webkit-scrollbar{} This webkit hides the scrollbar on chrome browser
+
+        // > *{ For each element inside 
+        > *{  
+            width: 100vw;
+            height: calc(100vh - 70px);
+            scroll-snap-align: start;
+        }
+    }
+}

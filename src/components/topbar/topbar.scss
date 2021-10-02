@@ -1,0 +1,133 @@
+@import "../../global.scss";
+
+.topbar{
+    width: 100%;
+    height: 70px;
+    background-color: white;
+    color: $mainColor;
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    transition: all 1s ease;
+
+    .wrapper {
+        padding: 10px 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+            @include mobile {
+                font-size: 15px;
+                padding-bottom: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        .left {
+            display: flex;
+            align-items: center;
+            
+            .logo {
+                font-size: 40px;
+                font-weight: 700;
+                text-decoration: none;
+                color: inherit;
+                margin-right: 20px;
+                img {
+                    height: 75px;
+                    @include mobile {
+                        margin-right: 35px;
+                    }
+                }
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            .itemContainer {
+                display: flex;
+                align-items: center;
+                margin-left: 30px;
+                cursor: pointer;
+                
+                a {
+                    color: black;
+                }
+                @include mobile {
+                    display: none;
+                }
+                
+                .icon {
+                    font-style: 18px;
+                    margin-right: 5px;
+                }
+
+                span{
+                    font-style: 15px;
+                    font-weight: 500;
+
+                    a {
+                        &.active {
+                            color: white;
+                        }
+                    }
+
+                }           
+            }
+        }   
+        .right {
+            .hamburger {
+                width: 32px;
+                height: 23px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                cursor: pointer;
+                &::-webkit-scrollbar{
+                    display: none;
+                };
+                @include mobile {
+                    padding-bottom: 15px;
+                }
+
+                span{
+                    width: 100%;
+                    height: 2.5px;
+                    background-color: $mainColor;
+                    transform-origin: left;
+                    transition: all 2s ease;
+
+                }
+            }
+        }
+    }
+
+    
+    &.active {
+        background-color: $mainColor;
+        color: white;
+
+        a {
+            color: white;
+        }
+
+        .hamburger{
+            span{
+                &:first-child {
+                    background-color: white;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2){
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: white;
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}
