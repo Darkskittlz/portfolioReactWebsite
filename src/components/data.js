@@ -52,16 +52,16 @@ export const projectsPortfolio = [
         title: "onHover Transitions",
         img: "assets/onHover.png"
     },
-    {
-        id: 5, 
-        title: "Business Bob",
-        // img: "https://i.pinimg.com/236x/03/67/01/036701dd755d8ff7cccce70014f071a9.jpg"
-    },
-    {
-        id: 6, 
-        title: "Task Tracker",
-        // img: "https://i.pinimg.com/236x/3a/24/ff/3a24ff7c4cf268ea5c164ea116be38fc.jpg"
-    },
+    // {
+    //     id: 5, 
+    //     title: "Business Bob",
+    //     // img: "https://i.pinimg.com/236x/03/67/01/036701dd755d8ff7cccce70014f071a9.jpg"
+    // },
+    // {
+    //     id: 6, 
+    //     title: "Task Tracker",
+    //     // img: "https://i.pinimg.com/236x/3a/24/ff/3a24ff7c4cf268ea5c164ea116be38fc.jpg"
+    // },
 ];
 
 // export const mobilePortfolio = [
