@@ -16,12 +16,16 @@ export default function Contact() {
         </div>
         <div className="right">
             <div className="linkContainer">
-                <a href = {"https://www.linkedin.com/in/jeremydev/"}>
-                    <LinkedIn className="icon"/>
-                </a>
-                <a href = {"https://www.github.com/Darkskittlz/"}>
-                    <GitHub className="icon"/>
-                </a>
+                <div className="linkLeft">
+                    <a href = {"https://www.linkedin.com/in/jeremydev/"}>
+                        <LinkedIn className="icon"/>
+                    </a>
+                </div>
+                <div className="linkRight">
+                    <a href = {"https://www.github.com/Darkskittlz/"}>
+                        <GitHub className="icon"/>
+                    </a>
+                </div>
             </div>
             <h2>Contact</h2>
             <form onSubmit={handleSubmit}>

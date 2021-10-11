@@ -1,17 +1,36 @@
 @import "../../global.scss";
 
 .works {
-    background: rgb(68,250,235);
-    background: linear-gradient(90deg, rgba(68,250,235,0.9661057692307692) 0%, rgba(70,62,251,1) 100%);
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #00ff1d 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    &::-webkit-scrollbar{
+        display: none;
+    };
+
+    h1 {
+        font-size: 50px;
+        font-weight: 700;
+        padding-top: 40px;
+        font-family: 'Roboto', monospace;
+        overflow: hidden;
+        @include mobile {
+            font-size: 30px;
+        }   
+    }
 
     .arrow{
         height: 50px;
         position: absolute;
         cursor: pointer;
+
+        @media screen and (max-width: 1216px){
+            display: none;
+        }
+
         @include mobile {
             display: none;
         }
@@ -20,27 +39,41 @@
         &.left{
             left: 100px;
             height: 80px; 
+            @media screen and (max-width: 1216px){
+                left: 10px;
+            }
+            @media screen and (max-width: 1216px){
+            left: 0;
+            }
         }
 
         &.right{
             transform: rotateY(180deg);
             right: 100px;
             height: 80px;
+            @media screen and (max-width: 1216px){
+                right: 10px;
+            }
         }
     }
 }
 
 .slider {
-    height: 350px;
+    height: 450px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+    &::-webkit-scrollbar{
+        display: none;
+    };
     @include mobile {
         height: 100vh;
         flex-direction: column;
         justify-content: center;
+
     }
+
 
     
     .container {
@@ -48,20 +81,27 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &::-webkit-scrollbar{
+            display: none;
+        };        
+
+        @include mobile {
+            margin-top: 10px;
+        }
     }
 
     .item {
-        width: 700px;
+        width: 900px;
         height: 100%;
         background-color: white;
         border-radius: 20px;
         display: flex;
         align-items: center;
         justify-content: center;
+
         @include mobile {
-            width: 80%;
-            height: 150px;
-            margin: 15px 0;
+            width: 90%;
+            margin: 5px 0;
         }
     
 

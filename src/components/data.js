@@ -2,7 +2,7 @@ export const featuredPortfolio = [
     {
         id: 1, 
         title: "MatiasSanes.com",
-        img: "assets/featuredMatias1.png"
+        img: "assets/matiasWebsiteHome.png"
     },
     {
         id: 2, 
@@ -17,7 +17,7 @@ export const featuredPortfolio = [
     {
         id: 4, 
         title: "Google Notes Embed",
-        img: "assets/featuredMatias4.png"
+        img: "assets/matiasWebsite.png"
     },
     {
         id: 5, 

@@ -6,6 +6,20 @@
     padding: 7px;
     border-radius: 10px;
     cursor: pointer; 
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    };
+
+
+    ul {
+        li {
+            @include mobile {
+                justify-content: space-between;
+            } 
+        }
+    }
+    
 
 
     &.active{

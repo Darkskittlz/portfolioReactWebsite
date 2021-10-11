@@ -7,9 +7,6 @@ import {
     designPortfolio,
 } from "../data";
 
-
-
-
 export default function Portfolio() {
     const [selected,setSelected] = useState("featured");
     const [data,setData] = useState([]);
@@ -22,10 +19,6 @@ export default function Portfolio() {
             id: "projects",
             title: "Projects",
         },
-        {
-            id: "design",
-            title: "Demon Slayer",
-        },
     ];
 
     useEffect(()=> {
@@ -35,9 +28,6 @@ export default function Portfolio() {
             break;
             case "projects":
             setData(projectsPortfolio);
-            break;
-            case "design":
-            setData(designPortfolio);
             break;
             default:
             setData(featuredPortfolio);

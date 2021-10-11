@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@1,300;1,400&display=swap');
 @import "../../global.scss";
-
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
 .testimonials{
-    background: rgb(250,68,168);
-    background: linear-gradient(90deg, rgba(250,68,168,0.9661057692307692) 0%, rgba(51,233,242,1) 100%);
+    background-color: #FFFFFF;
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #ffa600 100%);
+
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,9 +15,10 @@
     
     h1 {
         font-size: 50px;
-        font-weight: 100;
-        font-family: 'notMyType';
-
+        font-weight: 700;
+        padding-top: 40px;
+        font-family: 'Roboto', monospace;
+        overflow: hidden;
         @include mobile {
             font-size: 30px;
         }
@@ -77,7 +78,10 @@
                 display: flex;
                 align-items: center;
                 justify-content: center;
-
+                overflow: hidden;
+                &::-webkit-scrollbar{
+                    display: none;
+                };
 
                 img {
                     &.left {
@@ -92,9 +96,14 @@
                         border-radius: 50%;
                         object-fit: cover;
                         margin: 0 30px;
+
                         @include mobile {
                             width: 30px;
                             height: 30px;
+                            overflow: hidden;
+                            &::-webkit-scrollbar{
+                                display: none;
+                            };
                         }      
                     }
                 }
@@ -108,15 +117,23 @@
                 @include mobile {
                     padding: 2px;
                     margin: 5px;
+                    overflow: hidden;
                 }
             
 
                 h3 {
-                    font-size: 12px;
+                    font-size: 16px;
                     font-family: 'Source Sans Pro', sans-serif;
                     text-align: center;     
+                    &::-webkit-scrollbar{
+                        display: none;
+                    };
                     @include mobile {
                         padding: 5px;
+                        font-size: 11px;
+                        &::-webkit-scrollbar{
+                            display: none;
+                        };
                     }
                 
                 }

@@ -4,24 +4,32 @@
     width: 100%;
     height: 70px;
     background-color: white;
-    color: $mainColor;
+    color: black;
     position: fixed;
     top: 0;
     z-index: 3;
     transition: all 1s ease;
+    overflow: hidden;
 
     .wrapper {
-        padding: 10px 30px;
+        height: 70px;
+        padding: 10px 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        overflow: hidden;
 
         h1 {
-            @include mobile {
-                font-size: 15px;
-                padding-bottom: 15px;
+            display: none;
+            @media screen and (max-width: 769px){
                 display: flex;
-                justify-content: space-between;
+                justify-content: center;
+            }
+            @include mobile {
+                font-size: 20px;
+                margin-right: 25px;
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -35,11 +43,9 @@
                 text-decoration: none;
                 color: inherit;
                 margin-right: 20px;
+
                 img {
-                    height: 75px;
-                    @include mobile {
-                        margin-right: 35px;
-                    }
+                    height: 55px;
                 }
             }
 
@@ -50,9 +56,9 @@
             .itemContainer {
                 display: flex;
                 align-items: center;
-                margin-left: 30px;
+                margin-left: 20px;
                 cursor: pointer;
-                
+              
                 a {
                     color: black;
                 }
@@ -68,6 +74,7 @@
                 span{
                     font-style: 15px;
                     font-weight: 500;
+                    
 
                     a {
                         &.active {
@@ -91,6 +98,7 @@
                 };
                 @include mobile {
                     padding-bottom: 15px;
+                    padding-left: 5px;
                 }
 
                 span{
@@ -108,11 +116,7 @@
     
     &.active {
         background-color: $mainColor;
-        color: white;
-
-        a {
-            color: white;
-        }
+        color: black;
 
         .hamburger{
             span{
