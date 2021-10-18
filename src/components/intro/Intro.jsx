@@ -1,11 +1,22 @@
 import "./intro.scss";
 import { useEffect, useRef } from "react";
 import { init } from 'ityped'
+import ParticleBackground from "../../ParticleBackground";
 
-// import img from './assets/mainProPic.jpg'
 
 
 export default function Intro() {
+    return (
+        <div>
+            <CenterTitle />
+            <ParticleBackground />
+        </div>
+    );
+}
+
+
+
+function CenterTitle(){
     const textRef = useRef();
 
     useEffect(()=> {
@@ -13,26 +24,22 @@ export default function Intro() {
             showCursor: true,
             backDelay: 1500,
             backSpeed: 60,
-            strings: ["Full-Stack Developer", "Software Engineer", "Designer"],
+            strings: ["React Developer", "Software Engineer", "Designer"],
         });
     }, []);
+
     return (
         <div className="intro" id="intro">
-            <div className="left">
-                <div className="imgContainer">
-                    <img src= "./assets/profilePicture.png" alt=""/>                    
-                </div>
+        <div className="center">
+            <div className="wrapper">
+                <h2>Hi there, I'm </h2>
+                <h1>Jeremy Neal</h1>
+                <h3>Freelance <span ref={textRef}></span></h3>
             </div>
-            <div className="right">
-                <div className="wrapper">
-                    <h2>Hi there, I'm </h2>
-                    <h1>Jeremy Neal</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
-                </div>
-                <a href="#portfolio">
-                    <img src="assets/downArrowIMG.png" alt="" />
-                </a>
-            </div>
+            <a href="#portfolio">
+                <img src="assets/downWhiteArrow.png" alt="" />
+            </a>
         </div>
+    </div>
     );
 }

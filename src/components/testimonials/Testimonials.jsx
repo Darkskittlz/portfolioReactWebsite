@@ -8,7 +8,7 @@ export default function Testimonials() {
             title: "Cosplayer",
             img: "assets/elfGirl.jpg",
             icon: "assets/cosplayIcon.png",
-            desc: "Hi I'm Devin, a cosplayer who is determined to make it as a social media influencer! DarkMeow Productions is the company that made all of this possible! Jeremy, the developer, went above and beyond to make my website a central hub of communication and storefront for me to sell my art. ",
+            desc: "As a cosplayer who is determined to make it as a social media influencer I knew I needed a hub of communication between me and my fans. DarkMeow Productions helped me make an E-commerce platform to sell the art and clothes I market in my Twitch streams. ",
         },
         {
             id: 2, 
@@ -16,12 +16,12 @@ export default function Testimonials() {
             title: "Musician",
             img: "assets/matiasIMG.jpeg",
             icon: "https://static.thenounproject.com/png/17849-200.png",
-            desc: "The process of creating my first website was definitely a daunting task that I didn't really know how to approach at first. I didn't want to go through Wix or any other major website creator because it was a lot of work on my end that I didn't have the time to invest. When I stumbled across DarkMeow Productions I was delightfully surprised at how easy it was to communicate with the software developer ...",
+            desc: "The process of creating my first website was definitely a daunting task that I didn't really know how to approach at first. I didn't want to go through Wix or any other major website creator because it was a lot of work on my end that I didn't have the time to invest. When I stumbled across DarkMeow Productions I was delightfully surprised at how easy it was to communicate with the software developer.",
             featured: true,
         },
         {
             id: 3, 
-            name: "TBD",
+            name: "Haikyu",
             title: "?",
             img: "https://i.pinimg.com/236x/1f/ad/79/1fad790df43b91b3c847fcf0e8aca38d.jpg",
             icon: "https://animeandgameembroidery.com/wp-content/uploads/2020/11/karasuno.png",

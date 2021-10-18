@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@material-ui/core": "^4.12.3",
     "@material-ui/icons": "^4.11.2",
     "@mui/material": "^5.0.2",
     "@testing-library/jest-dom": "^5.11.4",
@@ -14,7 +15,9 @@
     "node-sass": "^5.0.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-particles-js": "^3.5.3",
     "react-scripts": "4.0.3",
+    "tsparticles": "^1.36.0",
     "web-vitals": "^1.0.1"
   },
   "scripts": {

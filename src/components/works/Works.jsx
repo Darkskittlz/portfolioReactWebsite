@@ -12,21 +12,21 @@ export default function Works() {
             id: 1, 
             icon: "./assets/github.png",
             title: "Github",
-            img: "./assets/githubPreview.png",
-            description: "Follow this website on Github for open-source contributions. I have several repositories listed on my profile. Most of them are static sites but I plan on building more react web applications."
+            img: "./assets/githubCard.png",
+            description: "_____OPEN SOURCE CONTRIBUTIONS_____ DO-community/ cloud_haiku (Darkskittlz haiku #1630), SauravMukherjee4/Aec-Library-Website (Darkskittlz branch #280)  ", 
         },
         {
             id: 2, 
             icon: "assets/linkedIn.png",
             title: "LinkedIn",
-            img: "assets/linkedInProfileCoverBro2.png",
-            description: "I have developed my proficiency with the MERN stack (MongoDB, Express, React, NodeJS), as well as HTML/CSS/Javascript over the past 15 months. After returning to the US from Japan in May, I have taught myself how to program using CodeAcademy, FreeCodeCamp, StackOverflow, LeetCode and YouTube tutorials."
+            img: "assets/linkedInCover.png",
+            description: "I am a MERN stack (MongoDB, Express, ReactJS, NodeJS) developer. Other skills include HTML, CSS, JAVASCRIPT, styled components, Ubuntu, EC2 Instance, Apache2, SSH, NPM."
         },
         {
             id: 3, 
             icon: "assets/dev2.png",
             title: "Free Code Camp",
-            description: "Follow along with me as I continue my journey as a developer. I'll be updating my freeCodeCamp profile as I earn certificates along the way. I'm currently working my way through the front-end libraries module. ",
+            description: "____Front End Development Libraries___ Bootstrap (31/31), jQuery (18/18), SASS (9/9), React (20/47)... ",
             img: "assets/freeCodeCampProfilePic.png"
         },
     ];

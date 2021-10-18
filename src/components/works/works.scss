@@ -148,13 +148,14 @@
                     }
                 }
                 h2 {
-                    font-size: 20px;
+                    font-size: 50px;
                     @include mobile {
                         font-size: 13px;
                     }
                 }
                 p {
-                    font-size: 13px;
+                    font-size: 15px;
+                    font-weight: 500;
                     @include mobile {
                         display: none;
                     }

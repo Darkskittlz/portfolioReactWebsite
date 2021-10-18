@@ -19,16 +19,16 @@ export const featuredPortfolio = [
         title: "Google Notes Embed",
         img: "assets/matiasWebsite.png"
     },
-    {
-        id: 5, 
-        title: "Youtube Embed",
-        img: "assets/featuredMatias5.png"
-    },
-    {
-        id: 6, 
-        title: "MailChimp Email Campaign",
-        img: "assets/matiasFeatured6.png"
-    },
+    // {
+    //     id: 5, 
+    //     title: "Youtube Embed",
+    //     img: "assets/featuredMatias5.png"
+    // },
+    // {
+    //     id: 6, 
+    //     title: "MailChimp Email Campaign",
+    //     img: "assets/matiasFeatured6.png"
+    // },
 ];
 
 export const projectsPortfolio = [
