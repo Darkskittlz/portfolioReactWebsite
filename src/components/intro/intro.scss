@@ -1,8 +1,8 @@
 @import "../../global.scss";
 
 #tsparticles {
-    background-color: rgb(0, 0, 0);
-    height: 100%;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.8717447916666666) 2%, rgba(148,2,143,0.9196428571428571) 28%, rgba(18,130,194,1) 53%, rgba(251,251,251,1) 100%);    height: 100%;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     scrollbar-width: none; //for firefox
