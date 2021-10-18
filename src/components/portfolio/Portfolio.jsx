@@ -4,7 +4,6 @@ import "./portfolio.scss";
 import { 
     featuredPortfolio,
     projectsPortfolio,
-    designPortfolio,
 } from "../data";
 
 export default function Portfolio() {

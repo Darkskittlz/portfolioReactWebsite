@@ -2,22 +2,26 @@ export const featuredPortfolio = [
     {
         id: 1, 
         title: "MatiasSanes.com",
-        img: "assets/matiasWebsiteHome.png"
+        img: "assets/matiasWebsiteHome.png",
+        visit: "https://www.matiassanes.com/"
     },
     {
         id: 2, 
         title: "BandsInTown Embed",
-        img: "assets/featuredMatias2.png"
+        img: "assets/featuredMatias2.png",
+        visit: "https://www.matiassanes.com/"
     },
     {
         id: 3, 
         title: "Spotify Embed",
-        img: "assets/featuredMatias3.png"
+        img: "assets/featuredMatias3.png",
+        visit: "https://www.matiassanes.com/"
     },
     {
         id: 4, 
         title: "Google Notes Embed",
-        img: "assets/matiasWebsite.png"
+        img: "assets/matiasWebsite.png",
+        visit: "https://www.matiassanes.com/"
     },
     // {
     //     id: 5, 
