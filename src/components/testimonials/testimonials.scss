@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Source+Sans+Pro:ital,wght@1,300;1,400&display=swap');
 @import "../../global.scss";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
 .testimonials{
     background-color: #FFFFFF;
-    background-image: linear-gradient(180deg, #FFFFFF 0%, #6284FF 50%, #ffa600 100%);
-
+    background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(0, 204, 255) 100%);
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -21,6 +21,7 @@
         overflow: hidden;
         @include mobile {
             font-size: 30px;
+            margin-top: 5px;
         }
     
         

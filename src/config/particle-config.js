@@ -1,14 +1,14 @@
 const particlesConfig = {
     particles: {
       number: {
-        value: 80,
+        value: 48,
         density: {
           enable: true,
           value_area: 800
         }
       },
       color: {
-        value: "#ffffff"
+        value: "#FFFFFF"
       },
       shape: {
         type: "edge",
@@ -48,7 +48,7 @@ const particlesConfig = {
       line_linked: {
         enable: true,
         distance: 240.5118091298282,
-        color: "#eef0ed",
+        color: "#FFFFFF",
         opacity: 0.4,
         width: 0.9620472365193128
       },
