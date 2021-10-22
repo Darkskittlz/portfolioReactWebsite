@@ -1,5 +1,16 @@
-$mainColor: #2874A6;
+// Color Variables
+$mainColor: #ffffff;
 $width: 768px;
+$clr-primary: rgb(0, 204, 255);
+$clr-primary-hover: #29e6a7;
+$clr-primary-dark: #039d69;
+$clr-gray100: #f9fbff;
+$clr-gray200: #f4f6fb;
+$clr-gray300: #eef1f6;
+$clr-gray400: #e1e5ee;
+$clr-gray500: #767b91;
+$clr-gray600: #4f546c;
+$clr-gray700: #161d34;
 
 @mixin mobile {
     @media (max-width: #{$width}){

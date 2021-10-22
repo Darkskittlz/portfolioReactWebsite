@@ -27,6 +27,10 @@
 
         h2 {
             font-size: 30px;
+            scrollbar-width: none; //for firefox
+            &::-webkit-scrollbar{
+                display: none;
+            };
         }
 
         .linkContainer {
@@ -35,19 +39,35 @@
             border: 1px solid black;
             padding: 5px;
             margin-bottom: 10px;
+            margin-top: 10px;
             border-radius: 10px;
             background-color: rgba(255, 255, 255, 0.514);
             backdrop-filter: blur(10px);
 
-            .linkLeft a{
-                color: blue;
-                padding-right: 5px;
-                padding-left: 5px;
-            }
-            .linkRight a{
-                color: black;
-                padding-right: 5px;
-            }
+
+            .linkLeft {
+                scrollbar-width: none; //for firefox
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                a {
+                    color: blue;
+                    padding-right: 5px;
+                    padding-left: 5px;
+                }
+            };
+
+            .linkRight {
+                scrollbar-width: none; //for firefox
+                &::-webkit-scrollbar{
+                    display: none;
+                }
+                a {
+                    color: black;
+                    padding-right: 5px;
+
+                }
+            };
         }
 
         form {
@@ -94,7 +114,7 @@
             }
 
             #send {
-                width: 150px;
+                width: 310px;
                 height: 35px;
                 color: white;
                 background-color: crimson;
@@ -103,6 +123,11 @@
                 cursor: pointer;
                 font-weight: 700;
                 margin-top: 5px;
+                margin-bottom: 5px;
+
+                @include mobile {
+                    width: 210px;
+                }
 
                 &.focus{
                     outline: none;

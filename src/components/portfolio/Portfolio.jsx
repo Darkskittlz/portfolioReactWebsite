@@ -1,62 +1,50 @@
-import { useEffect, useState } from "react";
-import PortfolioList from "../portfolioList/PortfolioList";
+import { GitHub } from "@material-ui/icons";
 import "./portfolio.scss";
-import { 
-    featuredPortfolio,
-    projectsPortfolio,
-} from "../data";
+
+
 
 export default function Portfolio() {
-    const [selected,setSelected] = useState("featured");
-    const [data,setData] = useState([]);
-    const list = [
-        {
-            id: "featured",
-            title: "Featured",
-        },
-        {
-            id: "projects",
-            title: "Projects",
-        },
-    ];
-
-    useEffect(()=> {
-        switch(selected){
-            case "featured":
-            setData(featuredPortfolio);
-            break;
-            case "projects":
-            setData(projectsPortfolio);
-            break;
-            default:
-            setData(featuredPortfolio);
-        }
-    },[selected])
-
     return (
-        <div className="portfolio" id="portfolio">
-            <h1>Portfolio</h1>
-            <ul>
-                {list.map((item) => (
-                    <PortfolioList 
-                    title={item.title} 
-                    active={selected === item.id} 
-                    setSelected={setSelected}
-                    id={item.id}
-                  />
-                ))}
-            </ul>
-            <div className="container">
-                {data.map(d=>(                   
-                    <div className="item">
-                    <img
-                    src={d.img} 
-                    alt=""
-                    />
-                    <h3>{d.title}</h3>
-                </div>
-            ))}
-            </div>         
+        <div className="wrapperPortfolio">
+            <Card
+                img="https://www.matiassanes.com/img/homeIMG.jpeg"
+                title="Matias Sanes"
+                description="HTML/SCSS/JS/NODEJS"
+                path="https://www.matiassanes.com/"
+            />
+            <Card
+                img= ""
+                title="Link Tree"
+                description="HTML/SCSS/JS/NODEJS"
+                path="https://darkskittles.com/" 
+            />
         </div>
     );
-}
+  }
+  
+  function Card(props){
+    return (
+    <div className="card">
+        <div className="card__body">
+          <img src={props.img} class="card__image" />
+          <h2 className="card__title">{props.title}</h2>
+          <p className="card__description">{props.description}</p>
+        </div>
+        <a 
+            href={props.path}
+            target="_blank"
+            rel="noopener noreferrer"
+        >
+            <button
+                className="card__btn"
+                path={props.path}
+            > Live Site
+            </button>
+        </a>
+      </div>
+    )
+  }
+  
+
+
+  

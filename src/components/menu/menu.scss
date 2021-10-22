@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: center;
     transition: all 1s ease;
+    border-radius: 5px;
 
 
     &.active{
@@ -23,9 +24,9 @@
         margin: 0;
         padding: 0;
         list-style: none;
-        font-size: 30px;
-        font-weight: 400;
-        color: white;
+        font-size: 31px;
+        font-weight: 500;
+        color: #000000;
         width: 60%;
 
         li{
