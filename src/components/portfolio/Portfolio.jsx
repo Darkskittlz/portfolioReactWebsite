@@ -1,4 +1,5 @@
 import { GitHub } from "@material-ui/icons";
+import { useState } from "react";
 import "./portfolio.scss";
 
 
@@ -13,7 +14,7 @@ export default function Portfolio() {
                 path="https://www.matiassanes.com/"
             />
             <Card
-                img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/darkskittlzDemo.png?raw=true"
+                img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/darkskittlzDemo2.png?raw=true"
                 title="Link Tree"
                 description="HTML/SCSS/JS/NODEJS"
                 path="https://darkskittles.com/" 
