@@ -1,5 +1,11 @@
+import React, { Component } from 'react';
+
 import { Email, GitHub, LinkedIn } from "@material-ui/icons"
 import "./topbar.scss"
+import { Switch } from 'antd';
+import moment, { locale } from 'moment';
+import Clock from "react-live-clock";
+
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
     return (
@@ -36,4 +42,3 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         </div>
     );
 }
-

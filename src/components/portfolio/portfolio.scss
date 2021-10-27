@@ -34,13 +34,17 @@ body{
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
-  scrollbar-width: none; //for firefox
-  &::-webkit-scrollbar{
-      display: none;
-  };
+
+
+  .card_body {
+    scrollbar-width: none; //for firefox
+    &::-webkit-scrollbar{
+        display: none;
+    };
+  }
 
   &__image{
-    height: 15rem;
+    height: 14rem;
     width: 100%;
     object-fit: cover;
   }
