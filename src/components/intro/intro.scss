@@ -18,25 +18,30 @@
     width: 30%;
     position: absolute;
     margin: 10px;
+    bottom: 0px;
+    @include mobile {
+        height: 50px;
+    }
 }
 
 .time{
-    -moz-border-radius: 70px; 
-    -webkit-border-radius: 70px; 
+    // -moz-border-radius: 70px; 
+    // -webkit-border-radius: 70px; 
+    // border-radius: 50%;
     font-size: 34px;
     width: 150px;
-    height: 140px;
+    height: 60px;
     color: white;
-    background: #fcfdfd18;
-    border-radius: 50%;
+    background: none;
     display: flex;
     align-items: center;
     justify-content: center;
     top: 44%;
     left: 42%;
     @include mobile {
-        height: 102px;
-        width: 110px;
+        width: 100px;
+        height: 30px;
+        background: none;
         font-size: 15px;
     }
 }

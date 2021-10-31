@@ -12,14 +12,19 @@ body{
 .wrapperPortfolio {
   display: grid;
   grid-template-columns:repeat(auto-fit, minmax(12rem, 16rem));
-  gap: 2rem;
+  gap: 3rem;
   background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(0, 204, 255) 100%);
-  padding-top: 80px;
   justify-content: center;
-  scrollbar-width: none; //for firefox
-  &::-webkit-scrollbar{
-      display: none;
-  };
+  align-items: center;
+
+
+  @include mobile {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
 }
 
 
@@ -35,22 +40,26 @@ body{
   cursor: pointer;
   transition: transform 200ms ease-in;
 
-
-  .card_body {
-    scrollbar-width: none; //for firefox
-    &::-webkit-scrollbar{
-        display: none;
-    };
+  @include mobile {
+    height: 280px;
+    width: 250px;
   }
+
 
   &__image{
     height: 14rem;
     width: 100%;
     object-fit: cover;
+    @include mobile {
+      height: 9.7rem;
+    }
   }
 
   &__title{
     padding: 1rem;
+    @include mobile {
+     margin-left: 5px; 
+    }
   }
 
   &__description {
@@ -58,6 +67,9 @@ body{
     font-weight: 400;
     font-style: italic;
     font-family: 'Lato', sans-serif;
+    @include mobile {
+      margin-left: 5px; 
+     }
   }
 
   &__a {
@@ -76,13 +88,15 @@ body{
     border-radius: $radius;
     transition: 200ms ease-in, color 200ms ease-in;
     cursor: pointer;
+    @include mobile {
+      padding: 0.5rem;
+    }
   }
 
-.links {
-    display: flex;
-    justify-content: center;
-}
-
+  .links {
+      display: flex;
+      justify-content: center;
+  }
 
   &:hover{
     transform: scale(1.02);
@@ -92,8 +106,6 @@ body{
     background: $clr-primary;
     color: white;
   }
-
-
 }
 
 
