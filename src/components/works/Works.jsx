@@ -12,7 +12,7 @@ export default function Works() {
             id: 1, 
             icon: "./assets/github.png",
             title: "Github",
-            img: "./assets/githubCard.png",
+            img: "./assets/cardIMG.png",
             description: "_____OPEN SOURCE CONTRIBUTIONS_____ DO-community/ cloud_haiku (Darkskittlz haiku #1630), SauravMukherjee4/Aec-Library-Website (Darkskittlz branch #280)  ", 
         },
         {
