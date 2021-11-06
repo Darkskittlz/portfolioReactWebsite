@@ -20,7 +20,7 @@ export default function Portfolio() {
                 path="https://darkskittles.com/" 
             />
             <Card
-                img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/notesApp.png?raw=true"
+                img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/notesApp3.png?raw=true"
                 title="React Notes"
                 description="Material-UI, useEffect, Map Method"
                 path="https://tender-brahmagupta-721442.netlify.app/" 
