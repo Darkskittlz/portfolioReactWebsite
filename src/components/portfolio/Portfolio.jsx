@@ -19,12 +19,12 @@ export default function Portfolio() {
                 description="HTML/SCSS/JS/NODEJS"
                 path="https://darkskittles.com/" 
             />
-            {/* <Card
+            <Card
                 img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true"
-                title="To Do App"
-                description="PERN Stack"
-                path="./" 
-            /> */}
+                title="React Notes"
+                description="Material-UI, useEffect, Map Method"
+                path="https://tender-brahmagupta-721442.netlify.app/" 
+            />
         </div>
     );
   }
