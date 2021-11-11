@@ -8,7 +8,7 @@ export default function Portfolio() {
     return (
         <div className="wrapperPortfolio">
             <Card
-                img="https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG.png?raw=true"
+                img="https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/featuredMatias1n.png?raw=true"
                 title="Musician Hub"
                 description="HTML/SCSS/JS/NODEJS"
                 path="https://www.matiassanes.com/"
