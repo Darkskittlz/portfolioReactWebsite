@@ -13,7 +13,7 @@ export default function Works() {
             icon: "./assets/github.png",
             title: "Github",
             img: "./assets/cardIMG.png",
-            description: "_____OPEN SOURCE CONTRIBUTIONS_____ DO-community/ cloud_haiku (Darkskittlz haiku #1630), SauravMukherjee4/Aec-Library-Website (Darkskittlz branch #280)  ", 
+            description: `Project ANT: Intern`,
         },
         {
             id: 2, 
