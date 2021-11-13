@@ -16,11 +16,27 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  height:73%;
   background-color: #FFFFFF;
   background-image: linear-gradient(180deg, #FFFFFF 0%, rgb(0, 204, 255) 100%);
+`;
+
+const Container2 = styled.div`
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  height: 27%;
+  background-color: #FFFFFF;
   &::-webkit-scrollbar{
     display: none;
+  }
+
+  h1{
+    font-size: 50px;
+    margin-top: 50px;
+    &::-webkit-scrollbar{
+    display: none;
+  }
   }
 `;
 
@@ -45,8 +61,8 @@ export default function App() {
       <div className="sections">
         <Intro />
         <Portfolio />
-        <Works />
         <Stories />
+        <Works />
         <Testimonials />
         <Contact />
       </div>
@@ -55,12 +71,13 @@ export default function App() {
 }
 
 function Stories () {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal,setShowModal] = useState(false)
   const openModal = () => {
-    setShowModal((prev) => !prev);
+    setShowModal((prev) => !prev)
   };
   return(
     <div className="Stories">
+      <Container2><h1>Short Stories</h1></Container2>
       <Container>
         <Button onClick={openModal}>Darkest Winters Side</Button>
         <Modal showModal={showModal} setShowModal={setShowModal} />

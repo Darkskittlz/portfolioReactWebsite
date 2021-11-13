@@ -13,7 +13,7 @@ export default function Works() {
             icon: "./assets/github.png",
             title: "Github",
             img: "./assets/cardIMG.png",
-            description: `Project ANT: Intern`,
+            description: `---------------- Organizations ----------------- Grammarhub | Project ANT | `,
         },
         {
             id: 2, 

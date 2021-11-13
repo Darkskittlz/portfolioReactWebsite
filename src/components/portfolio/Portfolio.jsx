@@ -10,6 +10,31 @@ const Container = styled.div`
     &::-webkit-scrollbar{
     display: none;
   }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    height: 88%;
+    gap: 0.5rem;
+
+    .card__body {
+        height: 64%;
+        justify-content: flex-start;
+    }
+    
+    img {
+        height: 100%;
+    }
+
+    p {
+        display: none;
+    }
+
+    button {
+        height: 50%;
+    }
+
+  }
 `
 
 export default function Portfolio() {
@@ -21,7 +46,7 @@ export default function Portfolio() {
                     img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true"
                     title="Link Tree"
                     description="HTML/SCSS/JS/NODEJS"
-                    path="https://darkskittles.com/" 
+                    path="https://darkskittlz.github.io/bootstrap-playground/" 
                 />
                 <Card
                     img="https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/featuredMatias1.png?raw=true"
