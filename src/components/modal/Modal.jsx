@@ -1,8 +1,8 @@
-import React, { useRef, useEffect, useCallback } from "react";
+import React, { useRef } from "react";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
 import { MdClose } from "react-icons/md";
-import IMG from "./modalIMG2.png";
+import IMG from "./images/IMG.jpg";
 
 const Background = styled.div`
   width: 100%;
@@ -11,64 +11,109 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 10;
   &::-webkit-scrollbar{
     display: none;
   }
 `;
 
 const ModalWrapper = styled.div`
-  width: 800px;
-  height: 500px;
   box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
   background: #fff;
   color: #000;
-  display: grid;
   grid-template-columns: 1fr 1fr;
-  position: relative;
+  display: grid;
+  position: fixed;
   z-index: 10;
-  border-radius: 10px;
+  width: 100%;
+  height: 500px;
   &::-webkit-scrollbar{
     display: none;
   }
 `;
 
 const ModalImg = styled.img`
-  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
   height: 100%;
-  border-radius: 10px 0 0 10px;
-  background: #000;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  background-color: #000000e1;
   z-index: 10;
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+
 `;
+
 
 const ModalContent = styled.div`
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
   line-height: 1.8;
   color: #141414;
-  z-index: 10;
+  background-color: #000000e1;
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  
+  h1{
+    color: white;
+    width: 100%;
+    font-weight: 700;
+    font-size: 35px;
+    text-decoration: underline;
+    text-align: center;
+    /* text-align: center; */
+    &::-webkit-scrollbar{
+    display: none;
+    }
+  }
 
   p {
     margin-bottom: 1rem;
+    color: white;
+    width: 100%;
+    font-size: 17px;
+    line-height: normal;
+    text-align: center;
+    &::-webkit-scrollbar{
+    display: none;
+    }
   }
 
-  button {
-    padding: 10px 24px;
-    background: #141414;
-    color: #fff;
-    border: none;
+  .br {
+    display: block;
+    margin-bottom: 0.8em;  
   }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    left: 0;
+  }
+
 `;
 
 const CloseModalButton = styled(MdClose)`
   cursor: pointer;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  width: 32px;
+  position: fixed;
+  display: flex;
+  top: 19px;
+  right: 6px;
   height: 32px;
+  width: 40px;
   padding: 0;
+  color: white;
   z-index: 10;
 `;
 
@@ -79,7 +124,7 @@ export const Modal = ({ showModal, setShowModal }) => {
       duration: 250,
     },
     opacity: showModal ? 1 : 0,
-    transform: showModal ? `translateY(0%)` : `translateY(100%)`,
+    transform: showModal ? `initial` : `translateY(100%)`, 
   });
 
   const closeModal = (e) => {
@@ -88,20 +133,7 @@ export const Modal = ({ showModal, setShowModal }) => {
     }
   };
 
-  // const keyPress = useCallback(
-  //   (e) => {
-  //     if (e.key === "Escape" && showModal) {
-  //       setShowModal(false);
-  //     }
-  //   },
-  //   [setShowModal, showModal]
-  // );
 
-  //Escape Key useEffect listener
-  // useEffect(() => {
-  //   document.addEventListener("keydown", keyPress);
-  //   return () => document.removeEventLIstener("keydown", keyPress);
-  // }, [keyPress]);
 
   return (
     <>
@@ -111,9 +143,25 @@ export const Modal = ({ showModal, setShowModal }) => {
             <ModalWrapper showModal={showModal}>
               <ModalImg src={IMG} alt="camera" />
               <ModalContent>
-                <h1>Are you Ready?</h1>
-                <p>Get exclusive access to next short story</p>
-                <button>Join!</button>
+                <h1>Darkest Winters Side</h1>
+                <p>I stop and stare up high; the sky is blue.</p>
+                <p>For hours I watch the clouds grow dark; it rains.</p>  
+                <p>The water runs for miles in twisting hues.</p>  
+                <p>Of colors cross the frozen windowpane.</p>  
+                <span class="br"></span> 
+                <p>Through these four corners framed I watch the ice</p>  
+                <p>Of winter play before my lonely eyes.</p>  
+                <p>And she, whose faithful heart would not suffice</p>  
+                <p>Without her love, betrayed her lover's guise.</p>  
+                <span class="br"></span> 
+                <p>For faith is pure, but love's what fans the flame</p>  
+                <p>That melts this frozen portrait of my soul,</p>  
+                <p>And what is lost I now must seek to gain</p>  
+                <p>Before indifference rends my sesnses dull.</p> 
+                <span class="br"></span> 
+                <p>For she who had a heart took up her pride</p>  
+                <p>And left me here by darkes winter's side.</p>  
+                <p>- Jeremy Neal</p>  
               </ModalContent>
               <CloseModalButton
                 aria-lable="Close modal"
@@ -122,7 +170,7 @@ export const Modal = ({ showModal, setShowModal }) => {
             </ModalWrapper>
           </animated.div>
         </Background>
-      ) : null };
+      ) : null }
     </>
   );
 };
