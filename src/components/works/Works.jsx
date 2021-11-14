@@ -10,17 +10,17 @@ export default function Works() {
     const data = [
         {
             id: 1, 
-            icon: "./assets/github.png",
-            title: "Github",
-            img: "./assets/cardIMG.png",
-            description: `---------------- Organizations ----------------- Grammarhub | Project ANT | `,
-        },
-        {
-            id: 2, 
             icon: "assets/linkedIn.png",
             title: "LinkedIn",
             img: "assets/linkedInCover.png",
             description: "I am a MERN stack (MongoDB, Express, ReactJS, NodeJS) developer. Other skills include HTML, CSS, JAVASCRIPT, styled components, Ubuntu, EC2 Instance, Apache2, SSH, NPM."
+        },
+        {
+            id: 2, 
+            icon: "./assets/github.png",
+            title: "Github",
+            img: "./assets/cardIMG.png",
+            description: `---------------- Organizations ----------------- Grammarhub | Project ANT | `,
         },
         {
             id: 3, 
@@ -52,7 +52,7 @@ export default function Works() {
                                 </div>
                             </div>
                             <div className="right">
-                            <img src={d.img}></img>
+                            <img src={d.img} alt=""></img>
                             </div>
                         </div>
                     </div>

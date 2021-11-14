@@ -4,8 +4,7 @@ import { init } from 'ityped'
 import ParticleBackground from "../../ParticleBackground";
 import React, { Component } from 'react';
 import Clock from "react-live-clock";
-import { Switch } from 'antd';
-import moment, { locale } from 'moment';
+import moment from 'moment';
 
 
 
@@ -74,7 +73,6 @@ class Time extends Component {
             <div className="time">
                 <Clock format={'h:mm a'}
                 ticking={true}
-                timezone={'US/EST'}
             />
             </div>
         </div>

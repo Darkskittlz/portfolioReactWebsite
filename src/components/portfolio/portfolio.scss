@@ -14,9 +14,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  &::-webkit-scrollbar {
-    display: none;
-  }
+
 
   h1 {
     font-size: 50px;
@@ -27,6 +25,9 @@ body {
     @include mobile {
       font-size: 30px;
       margin-top: 5px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 }
@@ -53,19 +54,42 @@ body {
     }
   }
 
+  .card__body {
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    @include mobile {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+
   &__image {
     height: 14rem;
     width: 100%;
     object-fit: cover;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     @include mobile {
       height: 9.7rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 
   &__title {
     padding: 1rem;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     @include mobile {
       margin-left: 5px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 
@@ -74,13 +98,29 @@ body {
     font-weight: 400;
     font-style: italic;
     font-family: "Lato", sans-serif;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+    
     @include mobile {
       margin-left: 5px;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 
   &__a {
     color: black;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    @include mobile {
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
   }
 
   &__btn {
@@ -95,8 +135,14 @@ body {
     border-radius: $radius;
     transition: 200ms ease-in, color 200ms ease-in;
     cursor: pointer;
+    &::-webkit-scrollbar {
+      display: none;
+    }
     @include mobile {
       padding: 0.5rem;
+      &::-webkit-scrollbar {
+        display: none;
+      }
     }
   }
 
