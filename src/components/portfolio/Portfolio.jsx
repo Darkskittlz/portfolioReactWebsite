@@ -1,5 +1,3 @@
-import { GitHub } from "@material-ui/icons";
-import { useState } from "react";
 import "./portfolio.scss";
 import styled from "styled-components";
 
@@ -43,7 +41,7 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
             <Container>
                 <Card
-                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true"
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true" 
                     title="Link Tree"
                     description="HTML/SCSS/JS/NODEJS"
                     path="https://darkskittlz.github.io/bootstrap-playground/" 
@@ -69,7 +67,7 @@ export default function Portfolio() {
     return (
     <div className="card">
         <div className="card__body">
-          <img src={props.img} class="card__image" />
+          <img src={props.img} alt='featuredIMG' className="card__image" />
           <h2 className="card__title">{props.title}</h2>
           <p className="card__description">{props.description}</p>
         </div>

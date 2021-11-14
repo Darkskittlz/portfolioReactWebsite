@@ -1,10 +1,6 @@
-import React, { Component } from 'react';
-
+import React from 'react';
 import { Email, GitHub, LinkedIn } from "@material-ui/icons"
 import "./topbar.scss"
-import { Switch } from 'antd';
-import moment, { locale } from 'moment';
-import Clock from "react-live-clock";
 
 
 export default function Topbar({ menuOpen, setMenuOpen }) {
@@ -12,7 +8,7 @@ export default function Topbar({ menuOpen, setMenuOpen }) {
         <div className={"topbar " + (menuOpen && "active")}>
             <div className="wrapper">
                 <div className="left">
-                    <a href="#intro" className="logo"><img src="./assets/catLogo.png"></img></a>
+                    <a href="#intro" className="logo"><img src="./assets/catLogo.png" alt="logo"></img></a>
                     <div className="itemContainer">
                         <a href = {"https://www.linkedin.com/in/jeremydev/"}>
                             <LinkedIn className="icon"/>

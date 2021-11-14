@@ -11,7 +11,7 @@ const Background = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 10;
+  z-index: 9999;
   &::-webkit-scrollbar{
     display: none;
   }
@@ -24,7 +24,7 @@ const ModalWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   display: grid;
   position: fixed;
-  z-index: 10;
+  z-index: 9999;
   width: 100%;
   height: 500px;
   &::-webkit-scrollbar{
@@ -42,7 +42,7 @@ const ModalImg = styled.img`
   -webkit-box-pack: center;
   -webkit-box-align: center;
   background-color: #000000e1;
-  z-index: 10;
+  z-index: 9999;
   position: fixed;
   left: 0;
   top: 0;
@@ -66,6 +66,7 @@ const ModalContent = styled.div`
   height: 100%;
   position: fixed;
   top: 0;
+  z-index: 9999;
   
   h1{
     color: white;
@@ -74,7 +75,6 @@ const ModalContent = styled.div`
     font-size: 35px;
     text-decoration: underline;
     text-align: center;
-    /* text-align: center; */
     &::-webkit-scrollbar{
     display: none;
     }
@@ -97,6 +97,11 @@ const ModalContent = styled.div`
     margin-bottom: 0.8em;  
   }
 
+  .br2 {
+    display: block;
+    margin-bottom: 0.4em;  
+  }
+
   @media (max-width: 768px) {
     width: 100%;
     left: 0;
@@ -114,7 +119,7 @@ const CloseModalButton = styled(MdClose)`
   width: 40px;
   padding: 0;
   color: white;
-  z-index: 10;
+  z-index: 9999;
 `;
 
 export const Modal = ({ showModal, setShowModal }) => {
@@ -148,23 +153,24 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <p>For hours I watch the clouds grow dark; it rains.</p>  
                 <p>The water runs for miles in twisting hues.</p>  
                 <p>Of colors cross the frozen windowpane.</p>  
-                <span class="br"></span> 
+                <span className="br"></span> 
                 <p>Through these four corners framed I watch the ice</p>  
                 <p>Of winter play before my lonely eyes.</p>  
                 <p>And she, whose faithful heart would not suffice</p>  
                 <p>Without her love, betrayed her lover's guise.</p>  
-                <span class="br"></span> 
+                <span className="br"></span> 
                 <p>For faith is pure, but love's what fans the flame</p>  
                 <p>That melts this frozen portrait of my soul,</p>  
                 <p>And what is lost I now must seek to gain</p>  
-                <p>Before indifference rends my sesnses dull.</p> 
-                <span class="br"></span> 
+                <p>Before indifference rends my senses dull.</p> 
+                <span className="br"></span> 
                 <p>For she who had a heart took up her pride</p>  
                 <p>And left me here by darkes winter's side.</p>  
+                <span className="br2"></span> 
                 <p>- Jeremy Neal</p>  
               </ModalContent>
               <CloseModalButton
-                aria-lable="Close modal"
+                aria-label="Close modal"
                 onClick={() => setShowModal((prev) => !prev)}
               />
             </ModalWrapper>
