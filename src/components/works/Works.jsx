@@ -12,7 +12,7 @@ export default function Works() {
             id: 1, 
             icon: "assets/linkedIn.png",
             title: "LinkedIn",
-            img: "assets/linkedInCover.png",
+            img: "assets/linkedInCover Photo.png",
             description: "I am a MERN stack (MongoDB, Express, ReactJS, NodeJS) developer. Other skills include HTML, CSS, JAVASCRIPT, styled components, Ubuntu, EC2 Instance, Apache2, SSH, NPM."
         },
         {

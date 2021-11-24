@@ -41,6 +41,12 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
             <Container>
                 <Card
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/2reactNotes.png?raw=true"
+                    title="ECommerce Art Shop"
+                    description="React, CommerceJS, "
+                    path="https://darkmeowshop.com" 
+                />
+                <Card
                     img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true" 
                     title="Link Tree"
                     description="HTML/SCSS/JS/NODEJS"
