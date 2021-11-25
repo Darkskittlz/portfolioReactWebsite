@@ -4,20 +4,22 @@ import styled from "styled-components";
 
 const Container = styled.div`
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 2rem;
     &::-webkit-scrollbar{
     display: none;
   }
-
   @media (max-width: 768px) {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     height: 88%;
     gap: 0.5rem;
 
     .card__body {
-        height: 64%;
-        justify-content: flex-start;
+        height: 60%;
+        justify-content: center;
     }
     
     img {
@@ -41,22 +43,28 @@ export default function Portfolio() {
         <h1>Portfolio</h1>
             <Container>
                 <Card
-                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/2reactNotes.png?raw=true"
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/darkmeowshop.png?raw=true"
                     title="ECommerce Art Shop"
-                    description="React, CommerceJS, "
+                    description="React, CommerceJS API, Styled-Components"
                     path="https://darkmeowshop.com" 
                 />
                 <Card
-                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true" 
-                    title="Link Tree"
-                    description="HTML/SCSS/JS/NODEJS"
-                    path="https://darkskittlz.github.io/bootstrap-playground/" 
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/darkmeowshop.png?raw=true"
+                    title="Blockchain Decentralized App"
+                    description=""
+                    path="https://darkmeowshop.com" 
                 />
                 <Card
                     img="https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/featuredMatias1.png?raw=true"
                     title="Musician Hub"
                     description="HTML/SCSS/JS/NODEJS"
                     path="https://www.matiassanes.com/"
+                />
+                <Card
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true" 
+                    title="Link Tree"
+                    description="HTML/SCSS/JS/NODEJS"
+                    path="https://darkskittlz.github.io/bootstrap-playground/" 
                 />
                 <Card
                     img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/2reactNotes.png?raw=true"
