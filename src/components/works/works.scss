@@ -11,6 +11,10 @@
         display: none;
     };
 
+    @include mobile {
+
+    }
+
     h1 {
         font-size: 50px;
         font-weight: 700;
@@ -28,11 +32,10 @@
         cursor: pointer;
 
         @media screen and (max-width: 1216px){
-            display: none;
+            bottom: 20px;
         }
 
         @include mobile {
-            display: none;
         }
 
 
@@ -40,10 +43,9 @@
             left: 100px;
             height: 80px; 
             @media screen and (max-width: 1216px){
-                left: 10px;
-            }
-            @media screen and (max-width: 1216px){
-            left: 0;
+                height: 40px;
+                display: flex;
+                justify-content: center;
             }
         }
 
@@ -52,7 +54,9 @@
             right: 100px;
             height: 80px;
             @media screen and (max-width: 1216px){
-                right: 10px;
+                height: 40px;
+                display: flex;
+                justify-content: center;
             }
         }
     }
@@ -68,13 +72,29 @@
         display: none;
     };
     @include mobile {
-        height: 100vh;
-        flex-direction: column;
+        height: 70vh;
         justify-content: center;
+        align-content: flex-start; 
 
     }
 
+    .slide-container {
+        width: 50%;
+        
+        button {
+            // display: none;
+        }
 
+        img {
+            height: 100%;
+            width: 200%;
+            border-radius: 10px;
+        }
+
+        h2 {
+            text-align: center;
+        }
+    }
     
     .container {
         width: 100vw;
@@ -87,6 +107,7 @@
 
         @include mobile {
             margin-top: 10px;
+            flex-direction: column;
         }
     }
 
@@ -102,12 +123,13 @@
         @include mobile {
             width: 90%;
             margin: 5px 0;
+            flex-direction: column;
         }
     
 
 
         .left {
-            flex: 4;
+            flex: 3;
             height: 80%;
             display: flex;
             align-items: center;
@@ -115,15 +137,15 @@
 
             .leftContainer {
                 width: 100%;
-                height: 90%;
+                height: 100%;
                 padding-left: 5px;
                 padding-right: 5px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-around;
                 @include mobile {
-                    width: 100%;
-                    height: 100%;
+                    flex-direction: column;
+                    padding-left: 0;
                 }
             
 
@@ -138,26 +160,36 @@
                     @include mobile {
                         width: 20px;
                         height: 20px;
+                        align-items: flex-start;
+                        display: none;
                     }
 
                     .img {
                         width: 25px;
                         @include mobile {
-                            width: 15px;
                         }
                     }
                 }
                 h2 {
-                    font-size: 50px;
+                    font-size: 40px;
+                    text-align: center;
                     @include mobile {
-                        font-size: 13px;
+                        font-size: 23px;
+                        margin-top: 10px
+                        &::-webkit-scrollbar{
+                            display: none;
+                        };
                     }
                 }
                 p {
                     font-size: 15px;
                     font-weight: 500;
                     @include mobile {
-                        display: none;
+                        text-align: center;
+                        padding: 2px;
+                        &::-webkit-scrollbar{
+                            display: none;
+                        };
                     }
                 }
                 a {
@@ -166,20 +198,20 @@
                     text-decoration: underline;
                     cursor: pointer;
                 }
+
             }
         }
         .right {
-            flex: 8;
+            flex: 6;
             height: 100%;
             display: flex;
             overflow: hidden;
-            align-items: stretch;
+            align-items: flex-start;
             justify-content: end;
             img {
                 border-radius: 10px;
                 @include mobile {
-                    height: 100%;
-                    width: 90%;
+                    width: 100%;
                 }
             }
         }

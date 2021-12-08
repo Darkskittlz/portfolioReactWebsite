@@ -49,22 +49,16 @@ export default function Portfolio() {
                     path="https://darkmeowshop.com" 
                 />
                 <Card
-                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/darkmeowshop.png?raw=true"
-                    title="Blockchain Decentralized App"
-                    description=""
-                    path="https://darkmeowshop.com" 
-                />
-                <Card
                     img="https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/featuredMatias1.png?raw=true"
                     title="Musician Hub"
                     description="HTML/SCSS/JS/NODEJS"
                     path="https://www.matiassanes.com/"
                 />
                 <Card
-                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/cardIMG2.png?raw=true" 
-                    title="Link Tree"
+                    img= "https://lh3.googleusercontent.com/6ZqQuUPptF63Wyss7DyZ7DWiNJFTA7uJy-E9fdS_kruMN9rhpmkxyE_1VuN868j_iLbHTy-KhmI4zL27mqDnB_TosO1Q9CEwQR0Q5nxxiF6kNdMf6jPHJ8-ljJJQdU2vIdWs6GBwKGmXfvurCYNa2m6FpRVARZnqblbF-dnd12VHxbhCifLaB2sjHbVz5hGttDzPtJ97ozuvjcH0Hip9ezbrQ14nLAdxZNZbRu3sggUpmqrDKL8XPdn2CelinWz6V3OOERZ1-R48vmWXuwC9sjezWclqjPJBVsK-etvgSLYbQJQUGRkZeTYsKckBLWJ28xwb_fdDf2Vy2qPVI4v86TKXNgVJ0bDA7LG8qmi2REWZm5j9o76nFiMK2A_4O6ETPMq2MyrCvg7o_FZuMedY5SIZMzeiymCAF8TVNtmkP04-3l0z5s4th3p9CFyVpZu_NZxV7qGXkX9VeeHKjQR3Ju37-uPCAWTilZbd_9IXhbNTGsjYvPqm4dml3xn1rLJmG6q-nvvKtCNc2Mib07n3sFSJIwekyBXOlMJ3IF0ZmzDMCgzDHfTw_Zbltxdd9lzYckTH7cT3ev2rKvhzM8Nftg3U8SO0KTOnEiKpDMAFPgDJ2LRQqWyqpnY2cwlKj2QjB3zC8EswbExqIsxB9TaCCo64XEHjpHKpkXDofXNQ6nSwyEz9NSRrRKqzaG-05ZEIa6GDX9G1FjFsm4PUDA3MV9c1WQ=w797-h527-no?authuser=0" 
+                    title="Old Portfolio"
                     description="HTML/SCSS/JS/NODEJS"
-                    path="https://darkskittlz.github.io/bootstrap-playground/" 
+                    path="https://darkskittlz.github.io/oldPortfolio/index.html" 
                 />
                 <Card
                     img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/2reactNotes.png?raw=true"
@@ -79,24 +73,26 @@ export default function Portfolio() {
   
   function Card(props){
     return (
-    <div className="card">
-        <div className="card__body">
-          <img src={props.img} alt='featuredIMG' className="card__image" />
-          <h2 className="card__title">{props.title}</h2>
-          <p className="card__description">{props.description}</p>
+    <div className="cardContainer">
+        <div className="card">
+            <div className="card__body">
+            <img src={props.img} alt='featuredIMG' className="card__image" />
+            <h2 className="card__title">{props.title}</h2>
+            <p className="card__description">{props.description}</p>
+            </div>
+            <a 
+                href={props.path}
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <button
+                    className="card__btn"
+                    path={props.path}
+                > Live Site
+                </button>
+            </a>
         </div>
-        <a 
-            href={props.path}
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <button
-                className="card__btn"
-                path={props.path}
-            > Live Site
-            </button>
-        </a>
-      </div>
+    </div>
     )
   }
   
