@@ -138,8 +138,6 @@ export const Modal = ({ showModal, setShowModal }) => {
     }
   };
 
-
-
   return (
     <>
       {showModal ? (
@@ -166,8 +164,6 @@ export const Modal = ({ showModal, setShowModal }) => {
                 <span className="br"></span> 
                 <p>For she who had a heart took up her pride</p>  
                 <p>And left me here by darkes winter's side.</p>  
-                <span className="br2"></span> 
-                <p>- Jeremy Neal</p>  
               </ModalContent>
               <CloseModalButton
                 aria-label="Close modal"

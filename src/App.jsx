@@ -77,7 +77,7 @@ function Stories () {
   };
   return(
     <div className="Stories">
-      <Container2><h1>Short Stories</h1></Container2>
+      <Container2><h1>Writing</h1></Container2>
       <Container>
         <Button onClick={openModal}>Darkest Winters Side</Button>
         <Modal showModal={showModal} setShowModal={setShowModal} />

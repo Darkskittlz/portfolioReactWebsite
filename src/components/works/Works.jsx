@@ -1,7 +1,6 @@
 import { useState } from "react";
 import "./works.scss";
-
-
+import React from 'react';
 
 
 
@@ -20,13 +19,13 @@ export default function Works() {
             icon: "./assets/github.png",
             title: "Github",
             img: "./assets/cardIMG.png",
-            description: `---------------- Organizations ----------------- Grammarhub | Project ANT | `,
+            description: `I am a part of the Grammarhub and Project ANT organizations on Github. I also routinely take part in hackathons such as hacktoberfest and look forwart to continuing to contribute to open source. `,
         },
         {
             id: 3, 
             icon: "assets/dev2.png",
             title: "Free Code Camp",
-            description: "____Front End Development Libraries___ Bootstrap (31/31), jQuery (18/18), SASS (9/9), React (20/47)... ",
+            description: "I am currently working through the front-end development modules on freeCodeCamp. ",
             img: "assets/freeCodeCampProfilePic.png"
         },
     ];
@@ -42,6 +41,9 @@ export default function Works() {
                 {data.map((d)=> (
                     <div className="container">
                         <div className="item">
+                            <div className="right">
+                                <img src={d.img} alt=""></img>
+                            </div>
                             <div className="left">
                                 <div className="leftContainer">
                                     <div className="imgContainer">
@@ -50,9 +52,6 @@ export default function Works() {
                                     <h2>{d.title}</h2>
                                     <p> {d.description} </p>
                                 </div>
-                            </div>
-                            <div className="right">
-                            <img src={d.img} alt=""></img>
                             </div>
                         </div>
                     </div>
@@ -63,3 +62,4 @@ export default function Works() {
         </div>
     );
 }
+

@@ -14,6 +14,7 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
 
 
   h1 {
@@ -32,6 +33,15 @@ body {
   }
 }
 
+.cardContainer {
+  display: flex;
+  flex-wrap: nowrap;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
 .card {
   overflow: hidden;
   background-color: white;
@@ -39,10 +49,13 @@ body {
   height: 430px;
   border-radius: $radius;
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
   cursor: pointer;
   transition: transform 200ms ease-in;
+  flex-direction: column;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 
   @include mobile {
     height: 225px;
