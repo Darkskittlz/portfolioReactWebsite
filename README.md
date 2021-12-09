@@ -1,3 +1,7 @@
+##Darkskittlz Portfolio Web App
+
+![alt text](https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/introIMG.png)
+
 This ReactJS website is built using create-react-app, JSX, and SCSS.
 
 The contact form was configured using emailJS to send emails directly from client-side JavaScript code. 
@@ -6,5 +10,9 @@ The contact form was configured using emailJS to send emails directly from clien
 Netlify Deploy:
 https://www.darkmeowproductions.com/
 
-Youtube Tutorial: 
-https://www.youtube.com/watch?v=7WwtzsSHdpI&t=1346s
+## Steps To Clone 
+
+<li>git clone https://github.com/Darkskittlz/portfolioReactWebsite.git </li>
+<li>npm install</li>
+<li>npm start</li>
+ 
