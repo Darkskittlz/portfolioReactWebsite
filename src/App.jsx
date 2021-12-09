@@ -60,9 +60,9 @@ export default function App() {
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen}/>
       <div className="sections">
         <Intro />
+        <Works />
         <Portfolio />
         <Stories />
-        <Works />
         <Testimonials />
         <Contact />
       </div>
