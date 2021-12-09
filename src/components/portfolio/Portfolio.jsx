@@ -55,7 +55,7 @@ export default function Portfolio() {
                     path="https://www.matiassanes.com/"
                 />
                 <Card
-                    img= "https://lh3.googleusercontent.com/6ZqQuUPptF63Wyss7DyZ7DWiNJFTA7uJy-E9fdS_kruMN9rhpmkxyE_1VuN868j_iLbHTy-KhmI4zL27mqDnB_TosO1Q9CEwQR0Q5nxxiF6kNdMf6jPHJ8-ljJJQdU2vIdWs6GBwKGmXfvurCYNa2m6FpRVARZnqblbF-dnd12VHxbhCifLaB2sjHbVz5hGttDzPtJ97ozuvjcH0Hip9ezbrQ14nLAdxZNZbRu3sggUpmqrDKL8XPdn2CelinWz6V3OOERZ1-R48vmWXuwC9sjezWclqjPJBVsK-etvgSLYbQJQUGRkZeTYsKckBLWJ28xwb_fdDf2Vy2qPVI4v86TKXNgVJ0bDA7LG8qmi2REWZm5j9o76nFiMK2A_4O6ETPMq2MyrCvg7o_FZuMedY5SIZMzeiymCAF8TVNtmkP04-3l0z5s4th3p9CFyVpZu_NZxV7qGXkX9VeeHKjQR3Ju37-uPCAWTilZbd_9IXhbNTGsjYvPqm4dml3xn1rLJmG6q-nvvKtCNc2Mib07n3sFSJIwekyBXOlMJ3IF0ZmzDMCgzDHfTw_Zbltxdd9lzYckTH7cT3ev2rKvhzM8Nftg3U8SO0KTOnEiKpDMAFPgDJ2LRQqWyqpnY2cwlKj2QjB3zC8EswbExqIsxB9TaCCo64XEHjpHKpkXDofXNQ6nSwyEz9NSRrRKqzaG-05ZEIa6GDX9G1FjFsm4PUDA3MV9c1WQ=w797-h527-no?authuser=0" 
+                    img= "https://github.com/Darkskittlz/portfolioReactWebsite/blob/main/public/assets/oldPortfolioPIC.png?raw=true" 
                     title="Old Portfolio"
                     description="HTML/SCSS/JS/NODEJS"
                     path="https://darkskittlz.github.io/oldPortfolio/index.html" 

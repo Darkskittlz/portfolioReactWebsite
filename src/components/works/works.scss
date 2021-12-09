@@ -63,7 +63,7 @@
 }
 
 .slider {
-    height: 450px;
+    height: 490px;
     display: flex;
     position: absolute;
     left: 0;
@@ -129,20 +129,21 @@
 
 
         .left {
-            flex: 3;
-            height: 80%;
+            flex: 5;
+            height: 100%;
             display: flex;
-            align-items: center;
-            justify-content: center;
+            align-items: stretch;
+            justify-content: start;
 
             .leftContainer {
                 width: 100%;
                 height: 100%;
                 padding-left: 5px;
                 padding-right: 5px;
+                padding-top: 10px;
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: flex-start;
                 @include mobile {
                     flex-direction: column;
                     padding-left: 0;
@@ -151,12 +152,11 @@
 
                 .imgContainer {
                     width: 40px;
-                    height: 40px;
+                    height: 45px;
                     border-radius: 10%;
                     background-color: white;
                     display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    align-items: flex-start;
                     @include mobile {
                         width: 20px;
                         height: 20px;
@@ -184,6 +184,8 @@
                 p {
                     font-size: 15px;
                     font-weight: 500;
+                    text-align: center;
+                    padding-right: 5px;
                     @include mobile {
                         text-align: center;
                         padding: 2px;
@@ -202,12 +204,12 @@
             }
         }
         .right {
-            flex: 6;
+            flex: 5;
             height: 100%;
             display: flex;
             overflow: hidden;
-            align-items: flex-start;
-            justify-content: end;
+            align-items: cover;
+            // justify-content: stretch;
             img {
                 border-radius: 10px;
                 @include mobile {

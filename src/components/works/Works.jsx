@@ -9,29 +9,47 @@ export default function Works() {
     const data = [
         {
             id: 1, 
-            icon: "assets/linkedIn.png",
-            title: "LinkedIn",
-            img: "assets/linkedInCover Photo.png",
-            description: "I am a MERN stack (MongoDB, Express, ReactJS, NodeJS) developer. Other skills include HTML, CSS, JAVASCRIPT, styled components, Ubuntu, EC2 Instance, Apache2, SSH, NPM."
+            icon: "assets/yinYang.png",
+            title: "About Me",
+            img: "assets/aboutMe4.jpg",
+            description: `I am a highly motivated programmer familiar with the MERN/PERN stack. As a 
+             full-stack developer I am comfortable with designing, coding, and deploying dynamic web applications 
+             and static websites. I am familiar with testing the endpoints of REST apis and querying data from 
+             remote/local databases. My favorite front-end framework is ReactJS, which I used to create  
+             DarkMeowProductions.com, which utilizes the EmailJS API, ParticleJS API, and styled-components. 
+             I am currently learning Solidity and Web3 technologies for the creation and integration 
+             of smart contracts with dApps and Dexs. `,
         },
         {
             id: 2, 
-            icon: "./assets/github.png",
-            title: "Github",
-            img: "./assets/cardIMG.png",
-            description: `I am a part of the Grammarhub and Project ANT organizations on Github. I also routinely take part in hackathons such as hacktoberfest and look forwart to continuing to contribute to open source. `,
+            icon: "assets/dev2.png",
+            title: "Dapp University Blockchain Bootcamp",
+            img: "assets/blockchainBootcampIMG.jpg",
+            description: `I am currently enrolled in a blockchain bootcamp centered around programming
+            in solidity and implementing smart contract technology in decentralized Apps. The capstone project
+            involves creating a DEX with a new ERC20-Token, and hosting it on the blockchain test network.`
         },
         {
             id: 3, 
-            icon: "assets/dev2.png",
-            title: "Free Code Camp",
-            description: "I am currently working through the front-end development modules on freeCodeCamp. ",
-            img: "assets/freeCodeCampProfilePic.png"
+            icon: "assets/github.png",
+            title: "Github",
+            img: "assets/cardIMG.png",
+            description: `I am a part of the Grammarhub and Project ANT organizations on Github. I  
+            routinely take part in hackathons such as hacktoberfest and look forward to continuing to 
+            my open source contributions as I progress as a developer. `,
+        },
+        {
+            id: 4, 
+            icon: "assets/linkedIn.png",
+            title: "LinkedIn",
+            img: "assets/linkedInCover2.png",
+            description: `I am a MERN stack (MongoDB, Express, ReactJS, NodeJS) developer. Other skills 
+            include HTML, CSS, JAVASCRIPT, styled components, Ubuntu, EC2 Instance, Apache2, SSH, NPM.`
         },
     ];
 
     const handleClick = (way)=>{
-        way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 2) 
+        way === "left" ? setCurrentSlide(currentSlide > 0 ? currentSlide-1 : 3) 
         : setCurrentSlide(currentSlide < data.length - 1 ? currentSlide + 1 : 0);
     }
     
